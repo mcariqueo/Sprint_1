@@ -3,9 +3,9 @@
 ##### SPRINT 1 #######
 
 Objetivos: 
-	 Construir una base de dades relacional senzilla amb MySQL.
-	 Realitzar consultes senzilles.
-	 Realitzar operacions la base de dades MySQL.
+	 - Construir una base de dades relacional senzilla amb MySQL.
+	 - Realitzar consultes senzilles.
+	 - Realitzar operacions la base de dades MySQL.
 
 Importar las bases de datos
 	 Importar a MySQL la base de datos transaction. 
