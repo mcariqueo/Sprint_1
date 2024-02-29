@@ -24,14 +24,16 @@ Para este ejercicio el output de la tabla es de 100 filas. A continuación muest
 
 
 # Exercici 3
-/* Des de la secció de màrqueting et sol·liciten que els passis un 
-llistat dels països que estan fent compres.*/
-SELECT 		company.country AS Listado_paises 		# Quiero el listado de paises
-FROM		transactions.company					# obtenidos desde tabla company
-JOIN 		transactions.transaction 				# Que esten contenidas en tabla transaction
-ON 			company.id = transaction.company_id		# les sigo que se unen por este campo
-GROUP BY 	company.country						# como realizo un count, necesito que agrupe por paises)
-ORDER BY 	company.country ASC;					# ordeno por orden alfabetico
+Des de la secció de màrqueting et sol·liciten que els passis un llistat dels països que estan fent compres.
+
+	SELECT 		company.country AS Listado_paises 		# Quiero el listado de paises
+	FROM		transactions.company				# obtenidos desde tabla company
+	JOIN 		transactions.transaction 			# Que esten contenidas en tabla transaction
+	ON 		company.id = transaction.company_id		# les sigo que se unen por este campo
+	GROUP BY 	company.country					# como realizo un count, necesito que agrupe por paises)
+	ORDER BY 	company.country ASC;				# ordeno por orden alfabetico
+
+ 
 
 # Exercici 4
 /* Des de màrqueting també volen saber des de quants països es realitzen les compres.*/
