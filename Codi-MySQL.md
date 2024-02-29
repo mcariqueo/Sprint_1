@@ -7,7 +7,7 @@ SELECT		company_name AS Nom,
 FROM 		transactions.company
 ORDER BY 	company_name ASC; # ordeno en funcion del nombre de la compañia en orden alfabetico.
 
-Este es un fragmento de código `printf("Hola mundo");` dentro de una oración.
+Este es un fragmento de código `hola hoa` dentro de una oración.
 
 Para obtener esta respuesta, debemos transformar la información de la tabla #company#. 
 Para ello utilizo la función select con los campos que solicitan
