@@ -15,6 +15,9 @@ d'aquelles que van realitzar transaccions amb una despesa compresa entre 100 i 2
 
 Este còdigo, entraga 37 filas en el output. y entrega la siguiente tabla ordenada els resultats de major a menor quantitat gastada.
 
+<details>
+  <summary>Mostrar más</summary>
+	
 |company_name | phone | country | Quantitat_total|
 |-------------|--|--|--|
 |'Enim Condimentum Ltd' | '09 55 51 66 25' | 'United Kingdom' | '2747.41'|
@@ -54,7 +57,7 @@ Este còdigo, entraga 37 filas en el output. y entrega la siguiente tabla ordena
 |'Quam A Felis Industries' | '04 87 10 27 16' | 'Italy' | '109.49'|
 |'A Institute' | '03 34 91 68 65' | 'Belgium' | '105.82'|
 |'Nulla Integer Vulputate Corp.' | '04 57 50 84 48' | 'Sweden' | '105.42'|
-
+</details>
 
 ## Exercici 2
 Indica el nom de les companyies que van fer compres el 16 de març del 2022, 28 de febrer del 2022 i 13 de febrer del 2022.
