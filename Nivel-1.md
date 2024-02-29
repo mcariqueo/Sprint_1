@@ -2,13 +2,13 @@
 Mostra les característiques principals de l'esquema creat i explica les diferents taules i variables que existeixen. Assegura't d'incloure un diagrama que il·lustri la relació entre les diferents taules i variables.
 
 ### Descripcion de la base de datos
-   El comando _**DESCRIBE**_ se usa para obtener información sobre la estructura de una tabla específica
+El comando _**DESCRIBE**_ se usa para obtener información sobre la estructura de una tabla específica
    - _**DESCRIBE company**_ para obtener información sobre la estructura de la tabla llamada "company".
    - _**DESCRIBE transaction**_ para obtener información sobre la estructura de la tabla llamada "transaction".
    
-   Estos comandos proporcionan detalles sobre los campos de ambas tablas, los tipos de datos de los campos, las primary y foreing key. En el caso de la tabla company, dado que es una tabla de    dimensiones tenemos solo primary key. 
+Estos comandos proporcionan detalles sobre los campos de ambas tablas, los tipos de datos de los campos, las primary y foreing key. En el caso de la tabla company, dado que es una tabla de    dimensiones tenemos solo primary key. 
 ### Tipos de tablas
-   Esta base de datos consta de dos componentes principales:
+Esta base de datos consta de dos componentes principales:
    1. Tabla de dimensiones: _**company**_
       
       Contiene 6 campos, todos ellos de tipo string.
@@ -18,7 +18,7 @@ Mostra les característiques principals de l'esquema creat i explica les diferen
    
       Contiene 9 campos con formatos que incluyen interger, fechas y caracteres. Esta tabla registra informacion de tallada sonbre las transacciones realizadas.
 ### Relacion entre tablas
-   En la figura se muestra el diagrama de ambas tablas, en la que se observa la relacion de 1:n entre la tabla company y la tabla transaction. La prymary key es company.id
+En la figura se muestra el diagrama de ambas tablas, en la que se observa la relacion de 1:n entre la tabla company y la tabla transaction. La prymary key es company.id
    ![Logo de GitHub](https://github.com/mcariqueo/DataAnalytics_Sprint-1/blob/main/Relacion_tablas.png)
    
 
@@ -39,8 +39,6 @@ Realitza la següent consulta: Has d'obtenir el nom, email i país de cada compa
 
 Para obtener esta respuesta, debemos transformar la información de la tabla _**company**_, Para ello utilizo la función _**select**_ con los campos que solicitan y con _**order by**_ ordeno de manera alfabetica en funcion de los nombres de las compañias.
 
-
-
 Para este ejercicio el output de la tabla es de 100 filas. A continuación muestro el formato de las primeras filas: 
 | Nombre Compañia | email     | Pais    |
 |-----------------|-----------|--------|
@@ -53,7 +51,6 @@ Para este ejercicio el output de la tabla es de 100 filas. A continuación muest
 |Aliquam PC|	scelerisque.mollis@icloud.org	|Germany|
 |Aliquet Diam Limited	|eu.eros.nam@icloud.org|	United States|
 
-
 # Exercici 3
 Des de la secció de màrqueting et sol·liciten que els passis un llistat dels països que estan fent compres.
 
@@ -64,7 +61,7 @@ Des de la secció de màrqueting et sol·liciten que els passis un llistat dels 
 	GROUP BY 	company.country					# como realizo un count, necesito que agrupe por paises)
 	ORDER BY 	company.country ASC;				# ordeno por orden alfabetico
 
- En este caso nos genera una tabla con 15 filas, que corresponden a los 15 paises. Este código creará una tabla con una columna llamada "Listado_paises" con los paises que tienes datos de compra en la tabla **transaction**: 
+En este caso nos genera una tabla con 15 filas, que corresponden a los 15 paises. Este código creará una tabla con una columna llamada "Listado_paises" con los paises que tienes datos de compra en la tabla **transaction**: 
 
 | País          |
 |---------------|
@@ -113,10 +110,10 @@ El teu cap identifica un error amb la companyia que té aneu 'b-2354'. Per tant,
 	FROM 		transactions.company
 	WHERE		company.id = "b-2354";
 
- PAra esto extraigo la informacion desde la tabla **company**, y a traves del comando _**WHERE**_ busco el id de la compañia. El output de este codigo muestra:
-|ID | Nom | Pais Compañia|
-|--|--|--|
- |b-2354 | Ac Libero Inc. | United Kingdom|
+Para esto extraigo la informacion desde la tabla **company**, y a traves del comando _**WHERE**_ busco el id de la compañia. El output de este codigo muestra:
+|ID     | Nom            | Pais Compañia |
+|-------|----------------|---------------|
+|b-2354 | Ac Libero Inc. | United Kingdom|
  
 
 # Exercici 6
@@ -137,8 +134,7 @@ En este caso, considearamos que al solicitar la despesa mitjana se refiere a la 
 El output es el siguiente: 
 
 | Nombre Companyia | Despesa mitjana| 
-|---|--|
-|Eget Ipsum Ltd| 473.075000|
-
+|------------------|----------------|
+|Eget Ipsum Ltd    |    473.075000  |
 
 
