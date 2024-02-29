@@ -4,7 +4,7 @@ Realitza la següent consulta: Has d'obtenir el nom, email i país de cada compa
 	SELECT 	company_name AS Nom, 
  		email, 
    		country AS Pais_companyia
-	FROM transactions.company
+	FROM 	transactions.company
 	ORDER BY company_name ASC; 
 
 Para obtener esta respuesta, debemos transformar la información de la tabla _**company**_, Para ello utilizo la función _**select**_ con los campos que solicitan y con _**order by**_ ordeno de manera alfabetica en funcion de los nombres de las compañias.
