@@ -109,24 +109,21 @@ EL output es el siguiente:
 
 | Pais | Despesa_mitja |
 |------|------|
-|	United States	|	309.18	|
-|	Ireland	|	277.31	|
-|	United Kingdom	|	270.73	|
-|	Canada	|	269.65	|
-|	Sweden	|	260.62	|
-|	Norway	|	254.22	|
-|	Netherlands	|	253.02	|
-|	Germany	|	244.20	|
-|	Australia	|	232.05	|
-|	Belgium	|	228.15	|
-|	China	|	227.56	|
-|	New Zealand	|	222.28	|
-|	Italy	|	201.59	|
-|	France	|	179.20	|
-|	Spain	|	53.40	|
-
-
-
+|	United States	|	309.18	€	|
+|	Ireland	|	277.31	€	|
+|	United Kingdom	|	270.73	€	|
+|	Canada	|	269.65	€	|
+|	Sweden	|	260.62	€	|
+|	Norway	|	254.22	€	|
+|	Netherlands	|	253.02	€	|
+|	Germany	|	244.20	€	|
+|	Australia	|	232.05	€	|
+|	Belgium	|	228.15	€	|
+|	China	|	227.56	€	|
+|	New Zealand	|	222.28	€	|
+|	Italy	|	201.59	€	|
+|	France	|	179.20	€	|
+|	Spain	|	53.40	€	|
 
 
 
