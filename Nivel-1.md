@@ -104,19 +104,18 @@ En este caso, el resultado output muestra una tabla que entrega la suma de los p
 
 El teu cap identifica un error amb la companyia que té aneu 'b-2354'. Per tant, et sol·licita que li indiquis el país i nom de companyia d'aquest aneu.
 
-<!--  -->
+
 	SELECT		"b-2354" AS ID,
 			company_name AS Nom, 
 			country AS Pais_companyia
 	FROM 		transactions.company
 	WHERE		company.id = "b-2354";
--->
-<!
+
 Para esto extraigo la informacion desde la tabla **company**, y a traves del comando _**WHERE**_ busco el id de la compañia. El output de este codigo muestra:
 |ID     | Nom            | Pais Compañia |
 |-------|----------------|---------------|
 |b-2354 | Ac Libero Inc. | United Kingdom|
--->
+
 
 # Exercici 6
 
