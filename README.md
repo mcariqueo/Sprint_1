@@ -30,6 +30,7 @@ Mostra les característiques principals de l'esquema creat i explica les diferen
 ### Relacion entre tablas
    En la figura se muestra el diagrama de ambas tablas, en la que se observa la relacion de 1:n entre la tabla company y la tabla transaction. La prymary key es company.id
 
+   https://github.com/mcariqueo/DataAnalytics_Sprint-1/blob/main/Relacion_tablas.png
    
 
 ### Interpretación de la tabla
