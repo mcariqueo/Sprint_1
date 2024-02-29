@@ -1,6 +1,6 @@
 # DataAnalytics_Sprint-1
 
-##### SPRINT 1 #######
+# SPRINT 1 
 
 Objetivos: 
 - Construir una base de dades relacional senzilla amb MySQL.
