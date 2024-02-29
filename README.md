@@ -27,6 +27,11 @@ Mostra les característiques principals de l'esquema creat i explica les diferen
    3. Tabla de hechos: _**transaction**_
    
       Contiene 9 campos con formatos que incluyen interger, fechas y caracteres. Esta tabla registra informacion de tallada sonbre las transacciones realizadas.
+### Relacion entre tablas
+   En la figura se muestra el diagrama de ambas tablas, en la que se observa la relacion de 1:n entre la tabla company y la tabla transaction. La prymary key es company.id
+
+   
+
 ### Interpretación de la tabla
    En el contexto de esta base de datos, la tabla "transaction" representa los eventos o acciones específicas que ocurren, mientras que la tabla "company" proporciona información estática        sobre las compañías involucradas en estas transacciones. 
    Cada fila en la tabla "transaction" está asociada con un ID que corresponde a una transacción específica de una compañía específica, la cual está descrita en la tabla "company".
