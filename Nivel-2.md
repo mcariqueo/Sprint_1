@@ -123,7 +123,7 @@ EL output es el siguiente:
 |	New Zealand	|	222.28	€	|
 |	Italy	|	201.59	€	|
 |	France	|	179.20	€	|
-|	Spain	|	53.40	€	|
+|	Spain	|	  53.40	€	|
 
 
 
