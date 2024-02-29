@@ -6,4 +6,6 @@
 - Realitzar operacions la base de dades MySQL.
 ## Origen de datos
 
-La extraccion de datos se realiza a partir de la información entregada en la web. La base de datos tse llama "transactions" y esta compuesta de dos tablas (company y transaction)
+La extraccion de datos se realiza a partir de la información entregada en la web. 
+
+La base de datos tse llama _**transactions**_ y esta compuesta de dos tablas (_**company**_ y _**transaction**_)
