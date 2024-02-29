@@ -7,7 +7,13 @@ Objetivos:
 - Realitzar consultes senzilles.
 - Realitzar operacions la base de dades MySQL.
 
-Importar las bases de datos
-- Importar a MySQL la base de datos transaction. 
-- Esta Bd consta de dos tablas: company y transaction
-- En el curso entregan dos documentos: la estructura de la tabla y el contenido de los datos 
+Origen de datos
+
+La extraccion de datos se realiza a partir de la información entregada en la web. La base de datos tse llama "transactions" y esta compuesta de dos tablas (company y transaction)
+
+
+# Exercici 1 
+/* 	Mostra les característiques principals de l'esquema creat i 
+	explica les diferents taules i variables que existeixen. 
+	Assegura't d'incloure un diagrama que il·lustri la relació entre les diferents taules i variables.
+*/
