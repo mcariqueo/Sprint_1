@@ -6,7 +6,7 @@ SELECT		company_name AS Nom,
 			email, 
 			country AS Pais_companyia
 FROM 		transactions.company
-ORDER BY 	company_name ASC; 
+ORDER BY 	company_name ASC; --
 
 
 
