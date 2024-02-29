@@ -13,10 +13,10 @@ En una tabla podemos observar que:
 
 | Comando                                                     | num_fil |
 |-------------------------------------------------------------|---------|
-| SELECT DISTINCT * FROM transactions.company;              | 100 |
-| SELECT DISTINCT id FROM transactions.company;             |100 |
-| SELECT DISTINCT company_name FROM transactions.company;  | 100] |
-| SELECT DISTINCT phone FROM transactions.company;         | 100 |
-| SELECT DISTINCT email FROM transactions.company;        | 100 |
-| SELECT DISTINCT country FROM transactions.company;     | 15 |
-| SELECT DISTINCT website FROM transactions.company;    | 75 |
+| SELECT DISTINCT * FROM transactions.company;                | 100     |
+| SELECT DISTINCT id FROM transactions.company;               | 100     |
+| SELECT DISTINCT company_name FROM transactions.company;     | 100     |
+| SELECT DISTINCT phone FROM transactions.company;            | 100     |
+| SELECT DISTINCT email FROM transactions.company;            | 100     |
+| SELECT DISTINCT country FROM transactions.company;          | 15      |
+| SELECT DISTINCT website FROM transactions.company;          | 75      |
