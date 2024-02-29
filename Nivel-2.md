@@ -93,14 +93,17 @@ Quina és la mitjana de despesa per país?
 
 Presenta els resultats ordenats de major a menor mitjà.
 
-	SELECT 		company.country 	AS Pais,
-           		AVG(transaction.amount) AS Gasto_promedio
+	SELECT 		company.country 			AS Pais,
+           		ROUND(AVG(transaction.amount),2)	AS Gasto_promedio
 	FROM		transactions.company
 	JOIN		transactions.transaction 
-	ON c		ompany.id = transaction.company_id
+	ON		company.id = transaction.company_id
 	group by 	company.country
 	order by	avg(transaction.amount)
 
+En este caso, mediante el comando _**ROUND**_ redondeo el numero a dos decimales para una mejor visualización. 
+
+En el caso de _**order by**_ por defecto genera un orden de mayor a menor.
 
 EL output es el siguiente: 
 
