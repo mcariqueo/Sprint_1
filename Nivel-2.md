@@ -24,3 +24,5 @@ En una tabla podemos observar que:
 
 Esto nos indica que , si bien, no hay _**id**_ repetidos, si hay _**website**_ repetido. En el caso de _**country**_ no llama la atención, debido a que es esperable que se repitan paises.
 
+Respuesta: No hay _**Id**_s repetidos
+
