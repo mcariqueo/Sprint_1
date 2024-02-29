@@ -105,9 +105,10 @@ A més, el teu cap et sol·licita que indiquis quina és la companyia amb major 
 En este caso, considearamos que al solicitar la despesa mitjana se refiere a la despesa promedio. Por ello utilizo una funcion de promerido _**AVG**_. Como nos solicitan el la compañia con mayor despesa, puedo ordenarlos a traves de un _**order by**_ de mayor a menor (_**DESC**_) y obtener el _**LIMIT**_ 1.
 
 El output es el siguiente: 
+
 | Nombre Companyia | Despesa mitjana| 
-|--|--|
-|Eget| Ipsum Ltd|	473.075000|
+|---|--|
+|Eget Ipsum Ltd| 473.075000|
 
 
 
