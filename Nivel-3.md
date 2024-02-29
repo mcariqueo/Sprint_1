@@ -13,7 +13,7 @@ d'aquelles que van realitzar transaccions amb una despesa compresa entre 100 i 2
 	GROUP BY	company.company_name, company.phone, company.country
 	ORDER BY	sum(transaction.amount) DESC;
 
-Este còdigo, entraga 37 filas en el output. y entrega la siguiente tabla ordenada els resultats de major a menor quantitat gastada.
+Este código produce 37 filas en el resultado y muestra la siguiente tabla ordenada de mayor a menor cantidad gastada.
 
 <details>
   <summary>Mostrar más</summary>
