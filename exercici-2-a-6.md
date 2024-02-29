@@ -84,9 +84,9 @@ El teu cap identifica un error amb la companyia que té aneu 'b-2354'. Per tant,
 	WHERE		company.id = "b-2354";
 
  PAra esto extraigo la informacion desde la tabla **company**, y a traves del comando _**WHERE**_ busco el id de la compañia. El output de este codigo muestra:
-|ID | Nom | Pais Compañia|
-|--|--|--|
- |b-2354 | Ac Libero Inc. | United Kingdom|
+|ID     | Nom            | Pais Compañia |
+|-------|----------------|---------------|
+|b-2354 | Ac Libero Inc. | United Kingdom|
  
 
 # Exercici 6
@@ -107,8 +107,8 @@ En este caso, considearamos que al solicitar la despesa mitjana se refiere a la 
 El output es el siguiente: 
 
 | Nombre Companyia | Despesa mitjana| 
-|---|--|
-|Eget Ipsum Ltd| 473.075000|
+|------------------|----------------|
+|Eget Ipsum Ltd    |    473.075000  |
 
 
 
