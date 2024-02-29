@@ -67,6 +67,29 @@ El output es
 |2478.48|
 
 
+## Exercici 3
+En quin dia es van realitzar les cinc vendes de menor valor? Mostra la data de la transacció i la sumatòria de la quantitat de diners.
+
+Me baso en el ejercico anterior para obtener las 5 transacciones mas bajas esto se obtiene mediante:
+
+	SELECT 	sum(monto) as total
+	FROM 	
+		(SELECT 	DATE_FORMAT(timestamp, '%Y-%m-%d') AS fecha,
+				amount As Monto,
+				declined 
+		FROM		transaction
+		WHERE		declined !=1
+		ORDER BY	amount DESC
+    		limit 		5) 
+    		AS min_transaciones
+
+|Total|
+|-----|
+|85.41|
+
+
+
+
 
 
 
