@@ -16,7 +16,7 @@ d'aquelles que van realitzar transaccions amb una despesa compresa entre 100 i 2
 Este código produce 37 filas en el resultado y muestra la siguiente tabla ordenada de mayor a menor cantidad gastada.
 
 <details>
-  <summary>Mostrar más</summary>
+	<summary>Tabla completa</summary>
 	
 |company_name | phone | country | Quantitat_total|
 |-------------|--|--|--|
@@ -62,13 +62,16 @@ Este código produce 37 filas en el resultado y muestra la siguiente tabla orden
 ## Exercici 2
 Indica el nom de les companyies que van fer compres el 16 de març del 2022, 28 de febrer del 2022 i 13 de febrer del 2022.
 
+
 	SELECT DISTINCT		company.company_name
 	FROM 			transactions.company
 	JOIN			transactions.transaction
 	ON			company.id = transaction.company_id
 	WHERE			DATE_FORMAT(timestamp, '%Y-%m-%d') IN ('2022-02-28', '2022-03-16','2022-02-13');
 
-
+Al ejecutar este codigo se entrega una lista con los nombres de las compañías que realizaron compras en las fechas indicadas.
+- El comando _**DISTINCT**_ es necesario para asegurar que cada nombre de compañía se muestre solo una vez en los resultados.
+- Para seleccionar las fechas especificadas lo primero es transformarlas a un formato **'%Y-%m-%d**, para ello utilizo el comando _**DATE_FORMAT**_, y para seleccionarlas utilizo el comando _**WHERE**_ con el operado _**IN**_ ('2022-02-28', '2022-03-16', '2022-02-13').
 
 
 
