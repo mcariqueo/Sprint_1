@@ -19,12 +19,12 @@ Mostra les característiques principals de l'esquema creat i explica les diferen
    Estos comandos proporcionan detalles sobre los campos de ambas tablas, los tipos de datos de los campos, las primary y foreing key. En el caso de la tabla company, dado que es una tabla de    dimensiones tenemos solo primary key. 
 ### Tipos de tablas
    Esta base de datos consta de dos componentes principales:
-   1. Tabla de dimensiones: Company
+   1. Tabla de dimensiones: **Company**
       
       Contiene 6 campos, todos ellos de tipo string.
       Funciona como una tabla de dimensiones, donde cada fila describe una compañía con información relacionada con contacto, teléfono, ubicación y sitio web.
    
-   3. Tabla de hechos
+   3. Tabla de hechos: **transaction**
    
       Contiene 9 campos con formatos que incluyen interger, fechas y caracteres. Esta tabla registra informacion de tallada sonbre las transacciones realizadas.
 ### Interpretación de la tabla
