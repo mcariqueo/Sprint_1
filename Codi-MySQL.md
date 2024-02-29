@@ -24,7 +24,6 @@ Para este ejercicio el output de la tabla es de 100 filas. A continuación muest
 |Aliquet Diam Limited	|eu.eros.nam@icloud.org|	United States|
 
 
-
 # Exercici 3
 Des de la secció de màrqueting et sol·liciten que els passis un llistat dels països que estan fent compres.
 
@@ -37,37 +36,42 @@ Des de la secció de màrqueting et sol·liciten que els passis un llistat dels 
 
  En este caso nos genera una tabla con 15 filas, que corresponden a los 15 paises. Este código creará una tabla con una columna llamada "Listado_paises" con los paises que tienes datos de compra en la tabla **transaction**: 
 
-
-						| País          |
-						|---------------|
-						| Australia     |
-						| Belgium       |
-						| Canada        |
-						| China         |
-						| France        |
-						| Germany       |
-						| Ireland       |
-						| Italy         |
-						| Netherlands   |
-						| New Zealand   |
-						| Norway        |
-						| Spain         |
-						| Sweden        |
-						| United Kingdom|
-						| United States |
-
+| País          |
+|---------------|
+| Australia     |
+| Belgium       |
+| Canada        |
+| China         |
+| France        |
+| Germany       |
+| Ireland       |
+| Italy         |
+| Netherlands   |
+| New Zealand   |
+| Norway        |
+| Spain         |
+| Sweden        |
+| United Kingdom|
+| United States |
 
 # Exercici 4
-/* Des de màrqueting també volen saber des de quants països es realitzen les compres.*/
-/* para esto debo utilizar el cordigo anterior y generar una subquery, 
-con esto hago una tabla que será el from para un nuevo select*/
-SELECT 		sum(contar_paises) AS Num_paises
-FROM 
-	(SELECT 	COUNT(DISTINCT company.country) AS contar_paises 
-    FROM		transactions.company 
-    JOIN 		transactions.transaction 
-    ON 			company.id = transaction.company_id 
-    GROUP BY 	company.country) AS count;
+Des de màrqueting també volen saber des de quants països es realitzen les compres.
+
+Para esto debo utilizar el cordigo anterior y generar una subquery, con esto hago una tabla que será el from para un nuevo select
+
+	SELECT 		sum(contar_paises) AS Num_paises
+	FROM 
+	(	SELECT COUNT	(DISTINCT company.country) AS contar_paises 
+    		FROM		transactions.company 
+    		JOIN 		transactions.transaction 
+    		ON 			company.id = transaction.company_id 
+    		GROUP BY 	company.country) AS count;
+
+En este caso, el resultado output muestra una tabla que entrega la suma de los paises que tienen datos en la tabla **transaction**
+
+| Num_paises |
+|--|
+|15|
     
 # Exercici 5
 /* El teu cap identifica un error amb la companyia que té aneu 'b-2354'. Per tant, et sol·licita que li indiquis el país i nom de companyia d'aquest aneu.*/
