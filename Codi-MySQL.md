@@ -8,7 +8,7 @@ Realitza la següent consulta: Has d'obtenir el nom, email i país de cada compa
 	ORDER BY company_name ASC; 
 
 
-Para obtener esta respuesta, debemos transformar la información de la tabla #company#. 
+Para obtener esta respuesta, debemos transformar la información de la tabla ##company##
 Para ello utilizo la función select con los campos que solicitan
 y con #order by# ordeno en orden alfabtico en funcion de los nombres de las compañias
 
