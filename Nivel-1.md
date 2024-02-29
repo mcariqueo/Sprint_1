@@ -88,7 +88,7 @@ Para esto debo utilizar el cordigo anterior y generar una subquery, con esto hag
 
 | columna 1                                                                       | Columna 2                                    |
 |---------------------------------------------------------------------------------|----------------------------------------------|
-|	SELECT 		sum(contar_paises) AS Num_paises	|	|
+|	SELECT 		sum(contar_paises) AS Num_paises	|	
 |	FROM ||
 |	(	SELECT COUNT	(DISTINCT company.country) AS contar_paises ||
 |    		FROM		transactions.company ||
