@@ -27,6 +27,15 @@ Esto nos indica que , si bien, no hay _**id**_ repetidos, si hay _**website**_ r
 Respuesta: No hay _**Id**_s repetidos
 
 ## Exercici 2
-En quin dia es van realitzar les cinc vendes més costoses? Mostra la data de la transacció i la sumatòria de la quantitat de diners.
+En quin dia es van realitzar les cinc vendes més costoses? 
+
+Mostra la data de la transacció i la sumatòria de la quantitat de diners.
+
+
+
+
+
+
+
 
 
