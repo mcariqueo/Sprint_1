@@ -24,12 +24,22 @@ En una tabla podemos observar que:
 
 Esto nos indica que , si bien, no hay _**id**_ repetidos, si hay _**website**_ repetido. En el caso de _**country**_ no llama la atención, debido a que es esperable que se repitan paises.
 
-Respuesta: No hay _**Id**_s repetidos
+Respuesta: No hay _**Id**_ s repetidos
 
 ## Exercici 2
 En quin dia es van realitzar les cinc vendes més costoses? 
 
 Mostra la data de la transacció i la sumatòria de la quantitat de diners.
+
+En primerr lugar, o que hago es seleccionar las 5 primeras transacciones en orden descendente en funcion del _**amount**_, esto se obtiene mediente
+
+      SELECT 	DATE_FORMAT(timestamp, '%Y-%m-%d') AS fecha,
+			amount As Monto,
+			declined 
+      FROM		transaction
+      WHERE		declined !=1
+      ORDER BY	amount DESC
+      limit 5;
 
 
 
