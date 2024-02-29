@@ -13,7 +13,7 @@ Para obtener esta respuesta, debemos transformar la información de la tabla _**
 
 Para este ejercicio el output de la tabla es de 100 filas. A continuación muestro el formato de las primeras filas: 
 | Nombre Compañia | email     | Pais    |
-|-----------------|-----------|-------|
+|-----------------|-----------|--------|
 |A Institute|	metus.aliquam@google.edu|	Belgium|
 |Ac Fermentum Incorporated|	donec.porttitor.tellus@yahoo.net|	Germany|
 |Ac Industries|	ipsum@yahoo.com	|Germany|
@@ -64,13 +64,13 @@ Para esto debo utilizar el cordigo anterior y generar una subquery, con esto hag
 	(	SELECT COUNT	(DISTINCT company.country) AS contar_paises 
     		FROM		transactions.company 
     		JOIN 		transactions.transaction 
-    		ON 			company.id = transaction.company_id 
+    		ON 		company.id = transaction.company_id 
     		GROUP BY 	company.country) AS count;
 
 En este caso, el resultado output muestra una tabla que entrega la suma de los paises que tienen datos en la tabla **transaction**
 
 | Num_paises |
-|--|
+|------------|
 |15|
     
 # Exercici 5
@@ -90,12 +90,27 @@ El teu cap identifica un error amb la companyia que té aneu 'b-2354'. Per tant,
  
 
 # Exercici 6
-/* A més, el teu cap et sol·licita que indiquis quina és la companyia amb major despesa mitjana?*/
-SELECT 		company.company_name 	AS Nombre_Companyia,
+
+A més, el teu cap et sol·licita que indiquis quina és la companyia amb major despesa mitjana?
+
+	SELECT 		company.company_name 	AS Nombre_Companyia,
 			AVG(transaction.amount) AS Despesa_mitjana	# Si pide mediana, se refiere al promedio
-FROM		transactions.company					
-JOIN 		transactions.transaction 				
-ON 			company.id = transaction.company_id		
-GROUP BY 	company.company_name					
-ORDER BY 	AVG(transaction.amount) DESC
-LIMIT 		1;   
+	FROM		transactions.company					
+	JOIN 		transactions.transaction 				
+	ON 		company.id = transaction.company_id		
+	GROUP BY 	company.company_name					
+	ORDER BY 	AVG(transaction.amount) DESC
+	LIMIT 		1;   
+
+En este caso, considearamos que al solicitar la despesa mitjana se refiere a la despesa promedio. Por ello utilizo una funcion de promerido _**AVG**_. Como nos solicitan el la compañia con mayor despesa, puedo ordenarlos a traves de un _**order by**_ de mayor a menor (_**DESC**_) y obtener el _**LIMIT**_ 1.
+
+El output es el siguiente: 
+| Nombre Companyia | Despesa mitjana| 
+|--|--|
+|Eget| Ipsum Ltd|	473.075000|
+
+
+
+
+
+
