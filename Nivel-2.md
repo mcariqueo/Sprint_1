@@ -88,6 +88,45 @@ Me baso en el ejercico anterior para obtener las 5 transacciones mas bajas esto 
 |85.41|
 
 
+# Exercici 4
+Quina és la mitjana de despesa per país?
+
+Presenta els resultats ordenats de major a menor mitjà.
+
+	SELECT 		company.country 	AS Pais,
+           		AVG(transaction.amount) AS Gasto_promedio
+	FROM		transactions.company
+	JOIN		transactions.transaction 
+	ON c		ompany.id = transaction.company_id
+	group by 	company.country
+	order by	avg(transaction.amount)
+
+
+EL output es el siguiente: 
+
+| Pais | Despesa_mitja |
+|------|------|
+| United States | 309.179412 |
+| Ireland | 277.308387 |
+| United Kingdom | 270.731700 |
+| Canada | 269.647869 |
+| Sweden | 260.615063 |
+| Norway | 254.216324 |
+| Netherlands | 253.017778 |
+| Germany | 244.203220 |
+| Australia | 232.052500 |
+| Belgium | 228.147692 |
+| China | 227.556667 |
+| New Zealand | 222.277273 |
+| Italy | 201.590000 |
+| France | 179.198333 |
+| Spain | 53.400000 |
+
+
+
+
+
+
 
 
 
