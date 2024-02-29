@@ -50,8 +50,21 @@ esto nos entrega el siguiente output:
 |2021-08-28|	494.17	|
 |2022-01-31|	492.42	|
 
+	SELECT 	sum(monto) as total
+	FROM 	
+		(SELECT 	DATE_FORMAT(timestamp, '%Y-%m-%d') AS fecha,
+				amount As Monto,
+				declined 
+		FROM		transaction
+		WHERE		declined !=1
+		ORDER BY	amount DESC
+    		limit 		5) 
+    		AS max_transaciones
 
-
+El output es 
+|TOTAL  |
+|-------|
+|2478.48|
 
 
 
