@@ -9,7 +9,12 @@ SELECT			company_name AS Nom,
 FROM 		transactions.company
 ORDER BY 	company_name ASC; -- 
 
-
+/* Esto es un comentario que explica la consulta */
+SELECT company_name AS Nom, 
+       email, 
+       country AS Pais_companyia
+FROM transactions.company
+ORDER BY company_name ASC; 
 
 
 
