@@ -5,8 +5,7 @@ Per a això et sol·licita verificar si en la base de dades existeixen companyie
 
 En este caso, debo generar un consulta en la tabla _**company**_ buscando duplicados. Podria en primer lugar:
 
-  SELECT DISTINCT   * 
-  FROM               transactions.company
+      SELECT DISTINCT * FROM transactions.company
 
 En este caso, podemos verificar la cantidad de filas en el output. Con el ccomando "*" hacemos la consulta general. Esto mismo lo podemos hacer los id
 
