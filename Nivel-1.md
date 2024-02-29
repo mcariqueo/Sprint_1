@@ -86,15 +86,13 @@ Des de màrqueting també volen saber des de quants països es realitzen les com
 
 Para esto debo utilizar el cordigo anterior y generar una subquery, con esto hago una tabla que será el from para un nuevo select
 
-| columna 1                                                                     | Columna 2                                    |
-|-------------------------------------------------------------------------------|----------------------------------------------|
-|	SELECT 		sum(contar_paises) AS Num_paises			|	
-|	FROM |
-|	(	SELECT COUNT	(DISTINCT company.country) AS contar_paises |
-|    		FROM		transactions.company |
-|    		JOIN 		transactions.transaction |
-|   		ON 		company.id = transaction.company_id |
-|    		GROUP BY 	company.country) AS count;|
+	SELECT 		sum(contar_paises) AS Num_paises			
+	FROM 
+	(	SELECT COUNT	(DISTINCT company.country) AS contar_paises 
+    		FROM		transactions.company 
+    		JOIN 		transactions.transaction 
+   		ON 		company.id = transaction.company_id 
+    		GROUP BY 	company.country) AS count;
 
 En este caso, el resultado output muestra una tabla que entrega la suma de los paises que tienen datos en la tabla **transaction**
 
