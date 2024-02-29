@@ -33,17 +33,17 @@ Mostra la data de la transacció i la sumatòria de la quantitat de diners.
 
 En primerr lugar, o que hago es seleccionar las 5 primeras transacciones en orden descendente en funcion del _**amount**_, esto se obtiene mediente
 
-	SELECT 	DATE_FORMAT(timestamp, '%Y-%m-%d') AS fecha,
-		amount As Monto,
-		declined 
-      FROM	transaction
-      WHERE	declined !=1
-      ORDER BY	amount DESC
-      limit 	5;
+	SELECT 	 DATE_FORMAT(timestamp, '%Y-%m-%d') AS fecha,
+		 amount As Monto,
+		 declined 
+	FROM	 transaction
+	WHERE	 declined !=1
+	ORDER BY amount DESC
+	limit 	 5;
 
 esto nos entrega el siguiente output: 
-| Fecha | Monto |
-|--|--|
+| Fecha    | Monto      |
+|----------|------------|
 |2021-06-21|	499.23	|
 |2021-08-17|	497.84	|
 |2021-08-21|	494.82	|
