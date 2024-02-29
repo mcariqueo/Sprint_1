@@ -12,7 +12,7 @@ La extraccion de datos se realiza a partir de la información entregada en la we
 Mostra les característiques principals de l'esquema creat i explica les diferents taules i variables que existeixen. Assegura't d'incloure un diagrama que il·lustri la relació entre les diferents taules i variables.
 
 ### Descripcion de la base de datos
-   El comando DESCRIBE se usa para obtener información sobre la estructura de una tabla específica
+   El comando _**DESCRIBE**_ se usa para obtener información sobre la estructura de una tabla específica
    - _**DESCRIBE company**_ para obtener información sobre la estructura de la tabla llamada "company".
    - _**DESCRIBE transaction**_ para obtener información sobre la estructura de la tabla llamada "transaction".
    
