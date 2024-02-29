@@ -13,18 +13,18 @@ Mostra les característiques principals de l'esquema creat i explica les diferen
 
 ### Descripcion de la base de datos
    El comando DESCRIBE se usa para obtener información sobre la estructura de una tabla específica
-   - DESCRIBE company para obtener información sobre la estructura de la tabla llamada "company".
-   - DESCRIBE transaction para obtener información sobre la estructura de la tabla llamada "transaction".
+   - _**DESCRIBE company**_ para obtener información sobre la estructura de la tabla llamada "company".
+   -_**DESCRIBE transaction**_ para obtener información sobre la estructura de la tabla llamada "transaction".
    
    Estos comandos proporcionan detalles sobre los campos de ambas tablas, los tipos de datos de los campos, las primary y foreing key. En el caso de la tabla company, dado que es una tabla de    dimensiones tenemos solo primary key. 
 ### Tipos de tablas
    Esta base de datos consta de dos componentes principales:
-   1. Tabla de dimensiones: **Company**
+   1. Tabla de dimensiones: _**company**_
       
       Contiene 6 campos, todos ellos de tipo string.
       Funciona como una tabla de dimensiones, donde cada fila describe una compañía con información relacionada con contacto, teléfono, ubicación y sitio web.
    
-   3. Tabla de hechos: **transaction**
+   3. Tabla de hechos: _**transaction**_
    
       Contiene 9 campos con formatos que incluyen interger, fechas y caracteres. Esta tabla registra informacion de tallada sonbre las transacciones realizadas.
 ### Interpretación de la tabla
