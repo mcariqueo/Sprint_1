@@ -9,6 +9,18 @@ Realitza la següent consulta: Has d'obtenir el nom, email i país de cada compa
 
 Para obtener esta respuesta, debemos transformar la información de la tabla **company**, Para ello utilizo la función select con los campos que solicitan y con **order by** ordeno de manera alfabetica en funcion de los nombres de las compañias.
 
+Para este ejercicio el output de la tabla es de 100 filas. A continuación muestro el formato de las primeras filas: 
+
+|A Institute|	metus.aliquam@google.edu|	Belgium|
+|Ac Fermentum Incorporated|	donec.porttitor.tellus@yahoo.net|	Germany|
+|Ac Industries|	ipsum@yahoo.com	|Germany|
+|Ac Libero Inc.|	mollis.lectus@protonmail.ca|	United Kingdom
+|Aliquam Erat Volutpat LLP	|pede.nunc@icloud.net	|Italy|
+|Aliquam Iaculis Lacus Corp.|	dictum@aol.org	|Belgium|
+|Aliquam PC|	scelerisque.mollis@icloud.org	|Germany|
+|Aliquet Diam Limited	|eu.eros.nam@icloud.org|	United States|
+
+
 
 # Exercici 3
 /* Des de la secció de màrqueting et sol·liciten que els passis un 
