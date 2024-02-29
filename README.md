@@ -29,8 +29,7 @@ Mostra les característiques principals de l'esquema creat i explica les diferen
       Contiene 9 campos con formatos que incluyen interger, fechas y caracteres. Esta tabla registra informacion de tallada sonbre las transacciones realizadas.
 ### Relacion entre tablas
    En la figura se muestra el diagrama de ambas tablas, en la que se observa la relacion de 1:n entre la tabla company y la tabla transaction. La prymary key es company.id
-
-   https://github.com/mcariqueo/DataAnalytics_Sprint-1/blob/main/Relacion_tablas.png
+   ![Logo de GitHub](https://github.com/mcariqueo/DataAnalytics_Sprint-1/blob/main/Relacion_tablas.png)
    
 
 ### Interpretación de la tabla
