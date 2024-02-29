@@ -6,10 +6,9 @@
 ## Origen de datos
 
 La extraccion de datos se realiza a partir de la información entregada en la web. 
-
 La base de datos tse llama _**transactions**_ y esta compuesta de dos tablas (_**company**_ y _**transaction**_)
 
-# Archivos
+## Archivos
 - Nivel 1
 - Nivel 2
 - Nivel 3
