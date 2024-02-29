@@ -3,7 +3,9 @@ Realitza la següent consulta: Has d'obtenir el nom, email i país de cada compa
 
 
 
-	SELECT company_name AS Nom, email, country AS Pais_companyia
+	SELECT 	company_name AS Nom, 
+ 		email, 
+   		country AS Pais_companyia
 	FROM transactions.company
 	ORDER BY company_name ASC; 
 
