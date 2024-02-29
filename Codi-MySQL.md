@@ -35,26 +35,26 @@ Des de la secció de màrqueting et sol·liciten que els passis un llistat dels 
 	GROUP BY 	company.country					# como realizo un count, necesito que agrupe por paises)
 	ORDER BY 	company.country ASC;				# ordeno por orden alfabetico
 
- En este caso nos genera una tabla con 15 filas, que corresponden a los 15 paises. El output de el siguiente:
+ En este caso nos genera una tabla con 15 filas, que corresponden a los 15 paises. Este código creará una tabla con una columna llamada "Listado_paises" con los paises que tienes datos de compra en la tabla **transaction**: 
 
 
-| País          |
-|---------------|
-| Australia     |
-| Belgium       |
-| Canada        |
-| China         |
-| France        |
-| Germany       |
-| Ireland       |
-| Italy         |
-| Netherlands   |
-| New Zealand   |
-| Norway        |
-| Spain         |
-| Sweden        |
-| United Kingdom|
-| United States |
+						| País          |
+						|---------------|
+						| Australia     |
+						| Belgium       |
+						| Canada        |
+						| China         |
+						| France        |
+						| Germany       |
+						| Ireland       |
+						| Italy         |
+						| Netherlands   |
+						| New Zealand   |
+						| Norway        |
+						| Spain         |
+						| Sweden        |
+						| United Kingdom|
+						| United States |
 
 
 # Exercici 4
