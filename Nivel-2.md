@@ -20,3 +20,7 @@ En una tabla podemos observar que:
 | SELECT DISTINCT email FROM transactions.company;            | 100     |
 | SELECT DISTINCT country FROM transactions.company;          | 15      |
 | SELECT DISTINCT website FROM transactions.company;          | 75      |
+
+
+Esto nos indica que , si bien, no hay _**id**_ repetidos, si hay _**website**_ repetido. En el caso de _**country**_ no llama la atención, debido a que es esperable que se repitan paises.
+
