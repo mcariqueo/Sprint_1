@@ -1,13 +1,13 @@
 # Exercici 2
 Realitza la següent consulta: Has d'obtenir el nom, email i país de cada companyia, ordena les dades en funció del nom de les companyies
 
-''' SELECT		company_name AS Nom, 
+SELECT		company_name AS Nom, 
 			email, 
 			country AS Pais_companyia
 FROM 		transactions.company
-ORDER BY 	company_name ASC; # ordeno en funcion del nombre de la compañia en orden alfabetico. ''' 
+ORDER BY 	company_name ASC; -- ordeno en función del nombre de la compañía en orden alfabético.
 
-Este es un fragmento de código `hola hoa` dentro de una oración.
+
 
 Para obtener esta respuesta, debemos transformar la información de la tabla #company#. 
 Para ello utilizo la función select con los campos que solicitan
