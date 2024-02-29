@@ -7,11 +7,13 @@ Realitza la següent consulta: Has d'obtenir el nom, email i país de cada compa
 	FROM transactions.company
 	ORDER BY company_name ASC; 
 
-Para obtener esta respuesta, debemos transformar la información de la tabla **company**, Para ello utilizo la función select con los campos que solicitan y con **order by** ordeno de manera alfabetica en funcion de los nombres de las compañias.
+Para obtener esta respuesta, debemos transformar la información de la tabla _**company**_, Para ello utilizo la función _**select**_ con los campos que solicitan y con _**order by**_ ordeno de manera alfabetica en funcion de los nombres de las compañias.
+
+
 
 Para este ejercicio el output de la tabla es de 100 filas. A continuación muestro el formato de las primeras filas: 
-| Nombre Compañia | email | Pais|
-|-------------|-----------|-------|
+| Nombre Compañia | email     | Pais    |
+|-----------------|-----------|-------|
 |A Institute|	metus.aliquam@google.edu|	Belgium|
 |Ac Fermentum Incorporated|	donec.porttitor.tellus@yahoo.net|	Germany|
 |Ac Industries|	ipsum@yahoo.com	|Germany|
