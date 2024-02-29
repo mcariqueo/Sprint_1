@@ -1,52 +1,18 @@
-##### SPRINT 1 #######
-/*Objetivos: 
-	-- Construir una base de dades relacional senzilla amb MySQL.
-	-- Realitzar consultes senzilles.
-	-- Realitzar operacions la base de dades MySQL.*/
-
-/* Importar las bases de datos
-	-- Importar a MySQL la base de datos transaction. 
-    -- Esta Bd consta de dos tablas: company y transaction
-    -- En el curso entregan dos documentos: la estructura de la tabla y el contenido de los datos */
-# Exercici 1 
-/* 	Mostra les característiques principals de l'esquema creat i 
-	explica les diferents taules i variables que existeixen. 
-	Assegura't d'incloure un diagrama que il·lustri la relació entre les diferents taules i variables.
-*/
-
-# VISUALIZAR LAS TABLAS
-	SHOW tables FROM transactions;			# Mostrar todas las tablas
-# Describe las caracteristicas de la tabla: 
-	DESC 	company; 	DESC transaction;
-	/* Comentarios:
-    
-    Tabla Company:
-		La tabla company consiste en una tabla compuesta por 6 campos, el type nos indica el tipo de variable, 
-		el valor entre parentesis indica el numero de bites permitidos, varchar significa "cadena de caracteres"
-		La primary key a corresponde a id; 
-		En todos los campos se ven valores nulos, probablemente es la ultima fila 
-     
-	Tabla transaction: 
-		La tabla esta compuesta por 9 campos, el type nos indica el tipo de variable, el valor entre parentesis indica el numero de bites permitidos
-		La primary key, es decir, .............., corresponde a id, este no es el mismo id de company
-		Se indica con la palabra "MUL" la foreing key 
-		En todos los campos se ven valores nulos, probablemente es la ultima fila*/
-
 # Exercici 2
-/* Realitza la següent consulta: Has d'obtenir el nom, email i país de cada companyia, 
-   ordena les dades en funció del nom de les companyies */
+Realitza la següent consulta: Has d'obtenir el nom, email i país de cada companyia, ordena les dades en funció del nom de les companyies
+
 SELECT		company_name AS Nom, 
 			email, 
 			country AS Pais_companyia
 FROM 		transactions.company
 ORDER BY 	company_name ASC; # ordeno en funcion del nombre de la compañia en orden alfabetico.
 
-/* 
+
 
 Para obtener esta respuesta, debemos transformar la información de la tabla #company#. 
 Para ello utilizo la función select con los campos que solicitan
 y con #order by# ordeno en orden alfabtico en funcion de los nombres de las compañias
-*/
+
 
 # Exercici 3
 /* Des de la secció de màrqueting et sol·liciten que els passis un 
