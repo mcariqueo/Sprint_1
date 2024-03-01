@@ -54,12 +54,12 @@ Para este ejercicio el output de la tabla es de 100 filas. A continuación muest
 # Exercici 3
 Des de la secció de màrqueting et sol·liciten que els passis un llistat dels països que estan fent compres.
 
-	SELECT 		company.country AS Listado_paises 		# Quiero el listado de paises
-	FROM		transactions.company				# obtenidos desde tabla company
-	JOIN 		transactions.transaction 			# Que esten contenidas en tabla transaction
-	ON 		company.id = transaction.company_id		# les sigo que se unen por este campo
-	GROUP BY 	company.country					# como realizo un count, necesito que agrupe por paises)
-	ORDER BY 	company.country ASC;				# ordeno por orden alfabetico
+	SELECT 		company.country AS Listado_paises 		 
+	FROM		transactions.company				 
+	JOIN 		transactions.transaction 			 
+	ON 		company.id = transaction.company_id		 
+	GROUP BY 	company.country					
+	ORDER BY 	company.country ASC;				
 
 En este caso nos genera una tabla con 15 filas, que corresponden a los 15 paises. Este código creará una tabla con una columna llamada "Listado_paises" con los paises que tienes datos de compra en la tabla **transaction**: 
 
