@@ -9,6 +9,8 @@ La extraccion de datos se realiza a partir de la información entregada en la we
 La base de datos se llama _**transactions**_ y esta compuesta de dos tablas (_**company**_ y _**transaction**_)
 
 ## Archivos
+Estos son los archivos con la información completa de los ejercicios:
 - Nivel 1
 - Nivel 2
 - Nivel 3
+- Adjunto el archivo sprin-1.sql con los codigos de todos los niveles
