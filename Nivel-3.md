@@ -70,8 +70,23 @@ Indica el nom de les companyies que van fer compres el 16 de març del 2022, 28 
 	WHERE			DATE_FORMAT(timestamp, '%Y-%m-%d') IN ('2022-02-28', '2022-03-16','2022-02-13');
 
 Al ejecutar este codigo se entrega una lista con los nombres de las compañías que realizaron compras en las fechas indicadas.
+
 - El comando _**DISTINCT**_ es necesario para asegurar que cada nombre de compañía se muestre solo una vez en los resultados.
-- Para seleccionar las fechas especificadas lo primero es transformarlas a un formato **'%Y-%m-%d**, para ello utilizo el comando _**DATE_FORMAT**_, y para seleccionarlas utilizo el comando _**WHERE**_ con el operado _**IN**_ ('2022-02-28', '2022-03-16', '2022-02-13').
+- Para seleccionar las fechas especificadas lo primero es transformarlas a un formato **'%Y-%m-%d**. Para lo anterior:
+	- Para el cambio de formato utilizo el comando _**DATE_FORMAT**_,
+ 	- Para seleccionar las fechas utilizo el comando _**WHERE**_ con el operado _**IN**_ ('2022-02-28', '2022-03-16', '2022-02-13').
+
+
+El output en este caso es:
+
+|     Company Name              |
+|------------------------------|
+| Sed LLC                      |
+| Arcu LLP                     |
+| Nunc Interdum Incorporated   |
+| Ut Semper Foundation         |
+| Lorem Eu Incorporated        |
+| Malesuada PC                 |
 
 
 
