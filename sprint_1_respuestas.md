@@ -38,33 +38,27 @@ Cada fila en la tabla "transaction" está asociada con un ID que corresponde a u
 
 ## Exercici 2
 
-Realitza la següent consulta: Has d'obtenir el nom, email i país de cada companyia, ordena les dades en funció del nom de les companyies
+- He hecho las modificaciones y con eso he obtenido la tabla.
+- Ahora se puede ver completo el pantallazo con el output de respuesta.
 
 ![](files_s1/S1N1E2.png)
 
-Para obtener esta respuesta, debemos transformar la información de la tabla _**company**_, Para ello utilizo la función _**select**_ con los campos que solicitan y con _**order by**_ ordeno de manera alfabetica en funcion de los nombres de las compañias.
-
-Para este ejercicio el output de la tabla es de 100 filas. 
-
 ## Exercici 3
-Des de la secció de màrqueting et sol·liciten que els passis un llistat dels països que estan fent compres.
 
-En este caso nos genera una tabla con 15 filas, que corresponden a los 15 paises. Este código creará una tabla con una columna llamada "Listado_paises" con los paises que tienes datos de compra en la tabla **transaction**: 
+- He utilizado el ***select distinct*** y así he quitado la función agregada y el ***GROUP BY***.
 
 ![](files_s1/S1N1E3.png)
 
 
 ## Exercici 4
-Des de màrqueting també volen saber des de quants països es realitzen les compres.
 
-En este caso, el resultado output muestra una tabla que entrega la suma de los paises que tienen datos en la tabla **transaction**
+- He quitado la subquery y ha quedado de acuerdo a lo indicado en la corrección.
+- He agregado todo el pantallazo para ver el result y el output.
 
 ![](files_s1/S1N1E4.png)
 
     
 ## Exercici 5
-
-El teu cap identifica un error amb la companyia que té aneu 'b-2354'. Per tant, et sol·licita que li indiquis el país i nom de companyia d'aquest aneu.
 
 Para esto extraigo la informacion desde la tabla **company**, y a traves del comando _**WHERE**_ busco el id de la compañia. 
 
@@ -72,8 +66,6 @@ Para esto extraigo la informacion desde la tabla **company**, y a traves del com
 
 
 ## Exercici 6
-
-A més, el teu cap et sol·licita que indiquis quina és la companyia amb major despesa mitjana?
 
 En este caso, considearamos que al solicitar la despesa mitjana se refiere a la despesa promedio. 
 
@@ -87,10 +79,6 @@ Por ello utilizo una funcion de promerido _**AVG**_. Como nos solicitan el la co
 
 ## Exercici 1
 
-El teu cap està redactant un informe de tancament de l'any i et sol·licita que li enviïs informació rellevant per al document. 
-
-Per a això et sol·licita verificar si en la base de dades existeixen companyies amb identificadors (aneu) duplicats.
-
 En este caso, debo generar un consulta en la tabla _**company**_ buscando duplicados. 
 
 ![](files_s1/S1N2E1.png)
@@ -101,24 +89,17 @@ Utilizo el HAVING para identificar aquellos que tienen mas de 1 registro y con e
 Respuesta: No hay _**Id**_ s repetidos
 
 ## Exercici 2
-En quin dia es van realitzar les cinc vendes més costoses? 
-
-Mostra la data de la transacció i la sumatòria de la quantitat de diners.
 
 ![](files_s1/S1N2E2.png)
 
 
 ## Exercici 3
-En quin dia es van realitzar les cinc vendes de menor valor? Mostra la data de la transacció i la sumatòria de la quantitat de diners.
 
 Me baso en el ejercico anterior para obtener las 5 transacciones mas bajas esto se obtiene mediante:
 
 ![](files_s1/S1N2E3.png)
 
 # Exercici 4
-Quina és la mitjana de despesa per país?
-
-Presenta els resultats ordenats de major a menor mitjà.
 
 En este caso, mediante el comando _**ROUND**_ redondeo el numero a dos decimales para una mejor visualización. 
 
@@ -128,15 +109,12 @@ En el caso de _**order by**_ por defecto genera un orden de mayor a menor.
 
 # Sprint 1 - Nivel 3
 ## Exercici 1
-Presenta el nom, telèfon i país de les companyies, juntament amb la quantitat total gastada, 
-d'aquelles que van realitzar transaccions amb una despesa compresa entre 100 i 200 euros. 
 
 ![](files_s1/S1N3E1.png)
 
 
 
 ## Exercici 2
-Indica el nom de les companyies que van fer compres el 16 de març del 2022, 28 de febrer del 2022 i 13 de febrer del 2022.
 
 ![](files_s1/S1N3E2.png)
 
